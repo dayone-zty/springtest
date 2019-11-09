@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" th:href="@{/webjars/jquery/3.4.1/jqueru.js}" charset="UTF-8"></script>
+    <script type="text/javascript">
+        $(function(){
+            console.info("====");
+        });
+    </script>
+</head>
+<body>
+<center>
+        <h4>login登录</h4>
+        <span th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></span>
+    <form th:action="@{/login}" method="post">
+        编  号：<input type="text" name="eid"><br>
+        用户名<input type="text" name="ename"><br>
+        <input type="submit" value="登登登">
+    </form>
+</center>
+</body>
+</html>

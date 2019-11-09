@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql:///biao
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
